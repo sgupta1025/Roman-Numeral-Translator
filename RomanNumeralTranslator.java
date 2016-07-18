@@ -4,7 +4,7 @@ public class RomanNumeralTranslator {
 	String result ="";
 	public String Translate(int numToTranslate) {
 		int arabicNumber = numToTranslate;
-		if (numToTranslate < 1|| numToTranslate>3999) {
+		if (numToTranslate < 1|| numToTranslate>=4000/*Gets too long otherwise*/) {
 			return "Invalid Roman Numeral";
 		}
 		while(numToTranslate >=1000) {
